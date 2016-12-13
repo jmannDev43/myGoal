@@ -1,0 +1,208 @@
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+nav {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.nav-wrapper {
+    padding: 0 30px;
+}
+
+.clock {
+    display: inline-block !important;
+    font-size: 26px !important;
+    color: #C8E8FF;
+}
+
+nav ul li:hover, .side-nav li:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav ul li:hover > a {
+    color: #C8E8FF;
+}
+
+.progressCntr {
+    z-index: 10;
+}
+
+.progress {
+    background-color: #C8E8FF;
+}
+
+    .progress .indeterminate {
+        background-color: #2483c7;    
+    }
+
+
+.overlay {
+    background-color: #2483c7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#splash {
+    background-color: #2483c7;
+/*    height: 1000px; */
+    color: white;
+    margin-bottom: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+#splash h3 {
+    width: 100%;
+}
+
+html {
+/*    overflow: hidden;*/
+}
+
+.splashBtn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.splashBtn:hover {
+    background-color: white;
+    color: #2483c7;
+}
+
+input {
+    border-bottom: 1px solid white !important;
+}
+
+input:focus:not([readonly]){
+    border-bottom: 1px solid #f6b2b5 !important; 
+    box-shadow: 0 1px 0 0 #f6b2b5 !important;
+}
+
+input:focus:not([readonly])+label{
+    color: #f6b2b5 !important; 
+}
+.input-field label {
+    color: white;
+}
+
+.input-field .prefix.active {
+    color: #f6b2b5;
+}
+
+.chip {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;    
+    border: 1px solid #4E4A4A;
+    background-color: rgba(0,0,0,0.5);    
+}
+
+.chip:hover {
+    border: 1px solid #2483c7;
+}
+
+#creditLbl {
+    position: absolute;
+    bottom: 32px;
+    right: 20px;
+    color: white;
+}
+
+.tabs {
+    box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.1);
+    margin-bottom: 2em;
+}
+
+.tabs .tab a {
+    color: white;
+}
+
+/*
+.tabs .tab a:hover {
+    color: #093758;
+}*/
+
+.splashLogo {
+    transition: all .3 ease-in;
+    transform: translateY(-100%);
+    margin-bottom: 0;
+}
+
+.tabCntr {
+    transform: translateX(-100%);
+}
+
+
+/* ----------------------- TRANSITIONS ------------------------------ */
+
+.curtain-transition {
+    transition: all .3s cubic-bezier(.08,1,.76,1);
+/*    transform: translateY(-100%);    */
+}
+
+/* .expand-enter defines the starting state for entering */
+/* .expand-leave defines the ending state for leaving */
+.curtain-enter {
+    transform: translateY(0);
+}
+
+.curtain-leave {
+    transform: translateY(-100%);    
+}
+
+
+.fromLeft-transition {
+    transition: all 1s cubic-bezier(.08,1,.76,1);
+}
+
+.fromleft-enter {
+    transform: translateX(-100%);
+}
+
+.fromLeft-leave {
+    transform: translateX(0);
+}
+
+
+.bounce-enter {
+  animation: bounce-in .5s;
+}
+.bounce-leave {
+  animation: bounce-out .5s;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes bounce-out {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+#registerFrm {
+    display: none;
+}

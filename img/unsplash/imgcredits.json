@@ -1,0 +1,23 @@
+credits: {
+    city: { url: '/lili_popper', artist: 'Lili Popper', fontColor: 'black' },
+    darkmtn: { url: 'roylandnye', artist: 'Lee Roylland', fontColor: 'white' },
+    desk: { url: '/szolkin', artist: 'Sergei Zolkin', fontColor: 'dimgrey' },
+    dock: { url: '/martantosh', artist: 'Stefanus Martanto Setyo Husodo', fontColor: 'white' },
+    getstarted: { url: 'dustinlee', artist: 'Dustin Lee', fontColor: 'black' },
+    ladder: { url: 'griffinkeller', artist: 'Griffin Keller', fontColor: 'white' },
+    landscape: { url: '/tomaszpaciorek', artist: 'Tomasz Paciorek', fontColor: 'white' },
+    peak: { url: '/samuelzeller', artist: 'Samuel Zeller', fontColor: '#2A5699' },    
+    seaAndSky: { url: '/tmokuenko', artist: 'Thibault Mokuenko', fontColor: 'white' },
+    shore: { url: '/barnimages', artist: 'Barn Images', fontColor: 'white' },
+    sparkler: { url: '/morgansessions', artist: 'Morgan Sessions', fontColor: 'white' },
+    station: { url: '/nicolaiberntsen', artist: 'Nicolai Berntsen', fontColor: 'black' },
+    water: { url: '/clemono2', artist: 'Clem Onojeghuo', fontColor: 'white' },
+    white: { url: '/caitlinwynne', artist: 'Caitlin Wynne', fontColor: '#2E4571' },
+    balloons: { url: '/danielacuevas', artist: 'Daniela Cuevas', fontColor: 'white' },
+    bulb: { url: '/joshbyers', artist: 'Josh Byers', fontColor: 'white' },
+    ladies: { url: '/goian', artist: 'Ian Schneider', fontColor: 'black' },
+    house: { url: '/inspirationde', artist: 'Inspiration de', fontColor: 'white' },
+    forest: { url: '/szmigieldesign', artist: 'Lukasz Szmigiel', fontColor: 'white' },
+    redsky: { url: '/pichler_sebastian', artist: 'Sebastian Pichler', fontColor: 'white' },
+    original: { url: '/szolkin', artist: 'Sergei Zolkin', fontColor: 'black' }
+}

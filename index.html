@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link rel=icon href="timelapse.png">
+        <title>MyGoal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    </head>
+
+    <body>
+        <div id="app">
+        <header>
+            <nav v-show="!showSplash">
+                <div class="nav-wrapper">
+                    <div class="col s12">
+                <a href="#!" class="brand-logo">MyG<i class="material-icons clock">timelapse</i>al</a>
+                <a href="#" class="button-collapse" data-activates="slide-out"><i class="mdi-navigation-menu"></i>                
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#!" v-on:click="toggleCurtain">Log Out</a></li>
+                </ul>
+                <ul id="slide-out" class="side-nav" style="left: -250px;">
+                    <li><a href="#!" v-on:click="toggleCurtain">Log Out</a></li>
+                </ul></a>
+                </div>                     
+                </div>
+            </nav>   
+        </header>  
+           <main>
+<!--           <div class="overlay" v-show="showSplash" transition="curtain"></div>-->
+            <div class="progressCntr" v-show="showSplash" transition="curtain">
+               <div class="row valign-wrapper center-align" id="splash" v-el:splash>
+                    <div class="col s12">
+<!--
+                       <div class="progress">
+                            <div class="indeterminate"></div>
+                        </div>
+-->
+                        <div class="col s12" id="tabCntr" v-show="showLogo" transition="bounce">
+                           <div class="">
+                           <div class="">
+                            <h3 class="splashLogo">MyG<i class="material-icons clock">timelapse</i>al</h3>                                  
+                               
+                           </div>
+                           </div>
+
+                          <div class="row">
+                              <div class="col s12 m6 l4 offset-m3 s12 offset-l4">
+                               <ul class="tabs">
+                                    <li class="tab col s6 l2"><a class="active" href="#loginFrm">Log In</a></li>
+                                    <li class="tab col s6 l2"><a href="#registerFrm">Register</a></li>
+                                </ul>                                                             
+                              </div>
+                             <form id="loginFrm">
+                              <div class="row col s12 m6 l4 offset-m3 s12 offset-l4">
+                                <div class="input-field">
+                                  <input id="email" type="email" class="validate">
+                                  <label for="email">Email</label>
+                                </div>
+                              </div>                                
+                              <div class="row col s12 m6 l4 offset-m3 s12 offset-l4">
+                                <div class="input-field">
+                                  <input id="password" type="password" class="validate">
+                                  <label for="password">Password</label>
+                                </div>
+                              </div>
+                             <div class="col s12 m6 l4 offset-m3 s12 offset-l4">
+                                 <a v-on:click="toggleCurtain" id="start" class="waves-effect waves-light btn splashBtn">Sign In</a>
+                             </div>
+                            </form>
+                            <form action="#" id="registerFrm">
+                              <div class="row col s12 m6 l4 offset-m3 s12 offset-l4">
+                                <div class="input-field">
+                                 <i class="material-icons prefix">email</i>
+                                  <input id="email" type="email" class="validate">
+                                  <label for="email">Email</label>
+                                </div>
+                              </div>                                                                                           
+                              <div class="row col s12 m6 l4 offset-m3 s12 offset-l4">
+                                <div class="input-field">
+                                 <i class="material-icons prefix">security</i>
+                                  <input id="password" type="password" class="validate">
+                                  <label for="password">Password</label>
+                                </div>
+                              </div>
+                              <div class="row col s12 m6 l4 offset-m3 s12 offset-l4">
+                                <div class="input-field">
+                                 <i class="material-icons prefix">security</i>
+                                  <input id="password-conf" type="password" class="validate">
+                                  <label for="password-conf">Confirm Password</label>
+                                </div>
+                              </div>
+                              <div class="row col s12 m6 l4 offset-m3 s12 offset-l4">
+                                  <a v-on:click="createAccount" id="createAcct" class="waves-effect waves-light btn splashBtn">Create Account</a>
+                              </div>
+                            </form>
+                          </div>
+                        </div>                                                                                                                 
+                   </div>
+                </div>
+            </div>      
+               <div class="chipCntr" v-show="!showSplash">
+                <p id="creditLbl">Photo  by: </p>
+                  <div class="chip" v-show="imageCredit">
+                    <a href="https://unsplash.com{{imageCredit.url}}">
+                        <img src="{{imageCredit.artistPic}}" v-show="imageCredit.artistPic" alt="">
+                        {{imageCredit.artist}}                    
+                    </a>
+                  </div>                                                                             
+               </div>                     
+           </main>         
+        </div>
+
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/backstretch.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/notification.js"></script>
+        <script type="text/javascript" src="js/vue.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>        
+    </body>
+</html>
