@@ -1,5 +1,4 @@
-# MyGoal 
-=======
+# myGoal 
 
 ### Primarily a front-end exploration / responsive design, that ended up being a pretty slideshow.  
 
