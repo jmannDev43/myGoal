@@ -7,4 +7,6 @@
 
 ![login](./img/login.png)
 
-![login](./img/red.png)![login](./img/blue.png)
+&nbsp;                      |  &nbsp;
+:-------------------------:|:-------------------------:
+![login](./img/red.png)  |  ![login](./img/blue.png)
